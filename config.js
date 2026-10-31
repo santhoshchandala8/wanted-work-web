@@ -1,10 +1,10 @@
 // Easy customization: update contact details, images and job listings here.
 const SITE_CONFIG = {
   contact: {
-    phone: "+91 98765 43210",
-    phoneLink: "tel:+919876543210",
-    whatsapp: "919876543210",
-    email: "hello@wantedwork.in"
+    phone: "+91 95509 53525",
+    phoneLink: "tel:+919550953525",
+    whatsapp: "919550953525",
+    email: "support@wantedwork.in"
   },
   images: {
     hero: "assets/hero-worker.svg",

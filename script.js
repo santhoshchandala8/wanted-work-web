@@ -48,6 +48,10 @@ document.getElementById("filterBtn").addEventListener("click", () => categoryPil
 
 document.getElementById("heroImage").src = SITE_CONFIG.images.hero;
 document.getElementById("contactLink").href = SITE_CONFIG.contact.phoneLink;
+document.getElementById("contactPhone").href = SITE_CONFIG.contact.phoneLink;
+document.getElementById("contactPhone").textContent = SITE_CONFIG.contact.phone;
+document.getElementById("contactEmail").href = "mailto:" + SITE_CONFIG.contact.email;
+document.getElementById("contactEmail").textContent = SITE_CONFIG.contact.email;
 document.getElementById("footerText").textContent = SITE_CONFIG.footerText;
 document.getElementById("year").textContent = new Date().getFullYear();
 renderJobs(SITE_CONFIG.jobs);
