@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wanted Work — find trusted local jobs and hire skilled workers.">
+  <title>Wanted Work | Find Local Jobs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#" aria-label="Wanted Work home">
+        <span class="brand-mark">W</span>
+        <span>Wanted <strong>Work</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#jobs">Browse Jobs</a>
+        <a href="#how-it-works">How it Works</a>
+      </nav>
+      <a class="contact-btn" href="#contact">Contact Us</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Your next opportunity is nearby</p>
+        <h1>Find work.<br><span>Hire local talent.</span></h1>
+        <p class="hero-copy">Discover jobs in your area or find the right person for the work you need done.</p>
+        <form class="search-box" id="searchForm">
+          <label class="search-field">
+            <span>Job title or skill</span>
+            <input id="searchInput" type="search" placeholder="e.g. Electrician, Driver">
+          </label>
+          <label class="search-field location-field">
+            <span>Location</span>
+            <input id="locationInput" type="search" placeholder="City or area">
+          </label>
+          <button type="submit" aria-label="Search jobs">Search Jobs</button>
+        </form>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img id="heroImage" src="assets/hero-worker.svg" alt="">
+        <div class="hero-badge"><strong>500+</strong><span>Local jobs</span></div>
+      </div>
+    </section>
+
+    <section class="jobs-section" id="jobs">
+      <div class="section-heading">
+        <div><p class="eyebrow">Latest opportunities</p><h2>Jobs near you</h2></div>
+        <button class="filter-btn" id="filterBtn" type="button">All Categories <span>⌄</span></button>
+      </div>
+      <div class="category-pills" id="categoryPills"></div>
+      <div class="jobs-grid" id="jobsGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No jobs match your search. Try another skill or location.</p>
+    </section>
+
+    <section class="steps-section" id="how-it-works">
+      <p class="eyebrow">Simple and straightforward</p>
+      <h2>How Wanted Work helps</h2>
+      <div class="steps-grid">
+        <article><span>01</span><h3>Search jobs</h3><p>Browse classifieds by skill, category and your preferred location.</p></article>
+        <article><span>02</span><h3>Contact directly</h3><p>Connect by phone or WhatsApp with the employer or service provider.</p></article>
+        <article><span>03</span><h3>Get it done</h3><p>Discuss the work, agree on terms and start a trusted local connection.</p></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Post a job or need help?</p>
+        <h2>Let’s get your work moving.</h2>
+      </div>
+      <a id="contactLink" href="tel:+910000000000">Contact Us <span>→</span></a>
+    </section>
+  </main>
+
+  <footer><div><a class="brand footer-brand" href="#"><span class="brand-mark">W</span><span>Wanted <strong>Work</strong></span></a><p id="footerText">Local jobs, local talent.</p></div><p>© <span id="year"></span> Wanted Work</p></footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
